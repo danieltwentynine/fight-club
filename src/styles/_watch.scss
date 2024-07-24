@@ -1,0 +1,60 @@
+@use '_var';
+
+.watch {
+    max-width: 1024px;
+    width: 100%;
+    min-height: 80vh;
+    margin: 80px auto 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    img {
+        width:100%;
+        opacity: 40%;
+    }
+
+    &__trailer_container {
+        width: 560px;
+        height: 315px;
+        position: relative;
+        padding-bottom: 56.25%;
+        
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__text_container {
+        margin-left: 24px;
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            &__item {
+
+                p {
+                    margin-bottom: 8px;
+                    transition: transform .2s ease-in-out;
+                    
+                    a {
+                        color: var.$textColor;
+                    }
+        
+                    &:hover {
+                        transform: scale(1.02);
+                        transition: transform .2s ease-in-out;
+                        
+                        a:hover {
+                            color:darken(var.$textColor, 4%); 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
