@@ -9,11 +9,20 @@
     background-position-x: 100%;
     text-align: center;
 
+    @media (max-width: 768px) {
+        min-height: 60vh;
+    }
+
     &__content {
         max-width: 640px;
 
         &__branding {
             max-width: 360px;
+
+            @media (max-width: 768px) {
+                max-width: 120px;
+                margin-top: 120px;
+            }
         }
     }
 }

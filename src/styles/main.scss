@@ -70,6 +70,11 @@ body {
     color: var.$btnTextColor;
     border-radius: 4px;
 
+    @media (max-width: 768px) {
+        letter-spacing: 0;
+        height: 40px;
+    }
+
     &:hover {
         background-color: darken(var.$btnBGColor, 3%);
     }

@@ -9,6 +9,11 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
 
+    @media (max-width: 768px ){
+        display: flex;
+        flex-direction: column;
+    }
+
     img {
         width:100%;
         opacity: 40%;
@@ -19,6 +24,11 @@
         height: 315px;
         position: relative;
         padding-bottom: 56.25%;
+
+        @media (max-width: 768px ){
+            width: 280px;
+            height: 158px;
+        }
         
         iframe {
             position: absolute;
@@ -32,9 +42,14 @@
     &__text_container {
         margin-left: 24px;
 
+        @media (max-width: 768px ){
+            margin-top: 40px;
+        }
+
         &__list {
             display: flex;
             flex-direction: column;
+            
             &__item {
 
                 p {
