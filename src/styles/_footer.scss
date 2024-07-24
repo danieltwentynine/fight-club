@@ -1,0 +1,41 @@
+@use '_var';
+
+.footer {
+    padding: 26px 8px;
+
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    &__logo {
+        width: 80px;
+        margin: 0 auto 10px;
+    }
+
+    &__list {
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__item {
+            display: inline-block;
+        }
+    }
+
+    p {
+        a {
+            color: var.$textColor;
+            text-decoration: underline;
+
+            &:hover {
+                color:darken(var.$textColor, 4%);
+            }
+        }
+    }
+}
