@@ -1,7 +1,9 @@
 @use '_var';
 @use '_header';
 @use '_hero';
-@use '_intro';
+@use '_rules';
+@use '_motivation';
+@use '_characters';
 
 * {
     box-sizing: border-box;
@@ -18,11 +20,13 @@ body {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
     color: var.$textColor;
+    font-family: 'DISPLAYEDOblique', sans-serif;
 }
 
 @mixin title($fontSize: 24px) {
     @include text($fontSize);
     color: var.$textColor;
+    font-family: 'DISPLAYEDObliqueoutline', sans-serif;
 }
 
 .text {
@@ -33,8 +37,16 @@ body {
     @include text(18px);
 }
 
+.text--bigger {
+    @include text(20px);
+}
+
 .title--big{
     @include title(32px);
+}
+
+.title--bigger{
+    @include title(64px);
 }
 
 .title{

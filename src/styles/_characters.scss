@@ -1,0 +1,33 @@
+.characters {
+    max-width: 1024px;
+    width: 100%;
+    min-height: 80vh;
+    margin: 140px auto 40px;
+    
+    h3 {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 16px;
+
+        &__item {
+            img {
+                width: 100%;
+                border-radius: 8px;
+                transition: transform .2s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.02);
+                    transition: transform .2s ease-in-out;
+                }
+            }
+
+            h4 {
+                margin-top: 8px;
+            }
+        }
+    }
+}

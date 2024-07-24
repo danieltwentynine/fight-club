@@ -1,18 +1,13 @@
 @use '_var';
 
-.intro {
+.rules {
     max-width: 1024px;
     width: 100%;
     min-height: 80vh;
     margin: 140px auto 40px;
     text-align: center;
-    
-    h3 {
-        font-family: 'DISPLAYEDObliqueoutline', sans-serif;
-    }
 
     &__list {
-        font-family: 'DISPLAYEDOblique', sans-serif;
         display: flex;
         flex-direction: column;
     }
