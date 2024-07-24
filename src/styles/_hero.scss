@@ -1,0 +1,19 @@
+@use '_var';
+
+.hero {
+    padding-top: 5.6vw;
+    min-height: 80vh;
+    background-image: url(../../dist/images/fc_main_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 100%;
+    text-align: center;
+
+    &__content {
+        max-width: 640px;
+
+        &__branding {
+            max-width: 360px;
+        }
+    }
+}
